@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'pre_exb';
+    src: url('font/pretendard/Pretendard-ExtraBold.eot');
+    src: url('font/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre_b';
+    src: url('font/pretendard/Pretendard-Bold.eot');
+    src: url('font/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Black.eot');
+    src: url('font/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-ExtraLight.eot');
+    src: url('font/pretendard/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Light.eot');
+    src: url('font/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Medium.eot');
+    src: url('font/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre_r';
+    src: url('font/pretendard/Pretendard-Regular.eot');
+    src: url('font/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Thin.eot');
+    src: url('font/pretendard/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Thin.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-SemiBold.eot');
+    src: url('font/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* 초기화 값 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+
+/* 헤더 */
+.header{
+    width: 1280px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.header ul{
+    font-family: 'pre_r';
+    font-size: 20px;
+    display: flex;
+    gap: 60px;
+    color: #ffffff;
+}
+
+/* 본문 */
+.main_visual{
+    height: 945px;
+    position: relative;
+}
+.main_visual img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual .text1{
+    width: 1280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_visual .text1 h1{
+    font-family: 'pre_b';
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #ab86ff;
+}
+.main_visual .text1 p {
+    font-family: 'pre_r';
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.main_visual2{
+    height: 777px;
+    background: url('../img/자료_아이템2.jpg') center center / cover no-repeat;
+    align-items: center;
+}
+.main_visual2 .wrap_item{
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+.main_visual2 .wrap_item span{
+    font-family: 'pre_b';
+    font-size: 18px;
+    color: #6400ff;
+}
+.main_visual2 .wrap_item h1{
+    font-family: 'pre_b';
+    font-size: 48px;
+    color: #ffffff;
+    padding-bottom: 50px;
+}
+.main_visual2 .wrap_item .items{
+    display: flex;
+    justify-content: space-between;
+}
+.main_visual2 .wrap_item .items .box{
+    width: 300px;
+    height: 340px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    
+}
+.main_visual2 .wrap_item .items .box .box_t{
+    display: block;
+    color: #ffffff;
+    padding: 100px 40px;
+    text-align: center;
+}
+.main_visual2 .wrap_item .items .box .box_t h2{
+    font-family: 'pre_b';
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.main_visual2 .wrap_item .items .box .box_t p{
+    font-family: 'pre_r';
+    font-size: 18px;
+}
+
+.main_visual3{
+    width: 1240px;
+    margin: 125px auto;
+}
+.main_visual3 span{
+    font-family: 'pre_b';
+    font-size: 18px;
+    color: #6400ff;
+}
+.main_visual3 h1{
+    font-family: 'pre_b';
+    font-size: 48px;
+    color: #333333;
+}
+
+.main_visual3 .items2{
+    width: 1280px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.main_visual3 .items2 img{
+    width: 528px;
+    height: 395px;
+    object-fit: cover;
+}
+
+
+.main_visual3 .items2 .text2 h4{
+    font-family: 'pre_b';
+    color: #333333;
+}
+.main_visual3 .items2 .text2 h2{
+    font-family: 'pre_b';
+    color: #333333;
+    font-size: 25px;
+    margin: 20px 0 80px;
+}
+.main_visual3 .items2 .text2 p{
+    font-family: 'pre_r';
+    color: #333333;
+    margin-bottom: 20px;
+}
